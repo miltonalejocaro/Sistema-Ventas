@@ -1,0 +1,86 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261109133622
+Nombre de usuario: DESKTOP-N6L40A3\milto
+Usuario RunAs: DESKTOP-N6L40A3\milto
+Nombre de la configuración: 
+Máquina: DESKTOP-N6L40A3 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 3868
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\milto\Desktop\auditoria_completa.txt
+PS C:\WINDOWS\system32> CD $HOME\Desktop
+PS C:\Users\milto\Desktop> MKDIR Sistema_Ventas
+
+
+    Directorio: C:\Users\milto\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/11/2026     13:36                Sistema_Ventas
+
+
+PS C:\Users\milto\Desktop> cd Sistema_Ventas
+PS C:\Users\milto\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\milto\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/11/2026     13:37                Frontend
+d-----         9/11/2026     13:37                Backend
+d-----         9/11/2026     13:37                BaseDatos
+
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\milto\Desktop\Sistema_Ventas> git init
+Initialized empty Git repository in C:/Users/milto/Desktop/Sistema_Ventas/.g
+it/
+PS C:\Users\milto\Desktop\Sistema_Ventas> git add
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git remote add origin https://github.com/miltonalejocaro/Sistema-Ventas.git
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\milto\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\milto\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\milto\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/11/2026     13:43                Pruebas_Unitarias
+
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\milto\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261109134445
+**********************
